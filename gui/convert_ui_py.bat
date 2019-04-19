@@ -1,0 +1,1 @@
+pyside2-uic %~dp0mainwindow.ui -o %~dp0ui_mainwindow.py
