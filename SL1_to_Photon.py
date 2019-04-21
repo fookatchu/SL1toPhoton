@@ -87,10 +87,6 @@ if __name__ == '__main__':
             if args.verbose:
                 print('DONE')
 
-    # if args.timelapse:
-    #     photon.overwrite_layer_parameters(exposure_time=1, off_time=1)
     photon.write(photon_path)
-    for layer in photon.layers:
-        print(layer)
     print('Output file written to: {}'.format(photon_path))
 
