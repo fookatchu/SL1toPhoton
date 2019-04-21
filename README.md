@@ -1,4 +1,4 @@
-SL1toPhoton is a tool for converting Slic3r PE's SL1 files to Photon files for the Anycubic Photon 3D-Printer. It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer.
+SL1toPhoton is a tool for converting Slic3r PE's SL1 files to Photon files for the Anycubic Photon 3D-Printer. It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer. The Photon S is currently not supported (see TODO).
 
 Friendly Reminder
 =================
@@ -81,3 +81,7 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
                         photon file output path.
 ```
+
+TODO
+====
+- I would like to add support for the newer AnyCubic Photon S. I don't plan to buy that printer, so I am in need of external help. If you do have information about the file format, let me know.
