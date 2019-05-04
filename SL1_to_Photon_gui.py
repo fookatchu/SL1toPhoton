@@ -131,7 +131,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         photon = pyphotonfile.Photon()
         photon.exposure_time = self.exposureSpinBox.value()
         photon.exposure_time_bottom = self.exposureBottomLayersSpinBox.value()
-        # photon.layer_height = self.layerHeightDoubleSpinBox.value()   # we don't want to mess with this
+        photon.layer_height = self.layerHeightDoubleSpinBox.value()
         photon.bottom_layers = self.bottomLayersSpinBox.value()
 
         self.progressBar.setMaximum(sl1.n_layers)

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\heiko\windguard\code\SL1toPhoton\gui\mainwindow.ui',
-# licensing of 'C:\Users\heiko\windguard\code\SL1toPhoton\gui\mainwindow.ui' applies.
+# Form implementation generated from reading ui file 'C:\Users\heiko\code\SL1toPhoton\gui\mainwindow.ui',
+# licensing of 'C:\Users\heiko\code\SL1toPhoton\gui\mainwindow.ui' applies.
 #
-# Created: Thu Apr 18 17:22:47 2019
+# Created: Sat May  4 15:46:18 2019
 #      by: pyside2-uic  running on PySide2 5.12.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -74,6 +74,7 @@ class Ui_MainWindow(object):
         self.layerHeightDoubleSpinBox.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
         self.layerHeightDoubleSpinBox.setReadOnly(True)
         self.layerHeightDoubleSpinBox.setPrefix("")
+        self.layerHeightDoubleSpinBox.setDecimals(3)
         self.layerHeightDoubleSpinBox.setSingleStep(0.05)
         self.layerHeightDoubleSpinBox.setObjectName("layerHeightDoubleSpinBox")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.layerHeightDoubleSpinBox)
