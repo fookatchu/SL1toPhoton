@@ -135,6 +135,9 @@
          <property name="prefix">
           <string notr="true"/>
          </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
          <property name="singleStep">
           <double>0.050000000000000</double>
          </property>
