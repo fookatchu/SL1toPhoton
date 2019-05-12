@@ -79,7 +79,7 @@ if __name__ == '__main__':
         sl1.extract_images(tmpdirname)
         if args.verbose:
             print('DONE')
-        for i, filepath in enumerate(glob.glob(os.path.join(tmpdirname, '*.png'))):
+        for i, filepath in enumerate(sorted(glob.glob(os.path.join(tmpdirname, '*.png')))):
             if args.verbose:
                 print('converting layer {} / {} '.format(i+1, sl1.n_layers), end='')
             Image.open(filepath).rotate(180).save(filepath)

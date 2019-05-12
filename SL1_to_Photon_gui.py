@@ -138,7 +138,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.progressBar.setTextVisible(True)
         with tempfile.TemporaryDirectory() as tmpdirname:
             sl1.extract_images(tmpdirname)
-            for i, filepath in enumerate(glob.glob(os.path.join(tmpdirname, '*.png'))):
+            for i, filepath in enumerate(sorted(glob.glob(os.path.join(tmpdirname, '*.png')))):
                 Image.open(filepath).rotate(180).save(filepath)
                 photon.append_layer(filepath)
                 self.progressBar.setValue(i+1)
