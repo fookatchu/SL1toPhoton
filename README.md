@@ -1,12 +1,12 @@
-SL1toPhoton is a tool for converting Slic3r PE's SL1 files to Photon files for the Anycubic Photon 3D-Printer. It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer. The Photon S is currently not supported (see TODO).
+SL1toPhoton is a tool for converting PrusaSlicer's (previously Slic3r PE) SL1 files to Photon files for the Anycubic Photon 3D-Printer. It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer. The Photon S is currently not supported (see TODO).
 
 Friendly Reminder
 =================
    Use at your own risk. Please verify that what you are doing will not break your printer. This project also relies currently on beta software, so please be aware of future breaking changes.
 
-Slic3r PE Setup
+PrusaSlicer Setup
 =================
-It is recommended to use Slic3rPE-1.42.0-beta2 or up, as this version added an option to disable anti-aliasing. Earlier versions will work, but the resulting Photon file will omit some pixels.
+It is recommended to use PrusaSlicer 2.0.0-rc (previously Slic3rPE-1.42.0-beta2) or up, as this version added an option to disable anti-aliasing. Earlier versions will work, but the resulting Photon file will omit some pixels.
 
 Steps:
  - Add a new SL1 Printer
@@ -87,6 +87,9 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
                         photon file output path.
 ```
+Alternatives
+========================================
+PrusaSlicer allows the export of STL's with supports as of PrusaSlicer 2.0.0-rc. You can export the prepared model and slice for the Photon with a Slicer which supports the Photon directly. This is a useful approach if you only care for the support generation.
 
 TODO
 ====
