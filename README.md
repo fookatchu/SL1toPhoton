@@ -1,4 +1,4 @@
-SL1toPhoton is a tool for converting PrusaSlicer's (previously Slic3r PE) SL1 files to Photon files for the Anycubic Photon 3D-Printer. It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer. The Photon S is currently not supported (see TODO).
+SL1toPhoton is a tool for converting PrusaSlicer's (previously Slic3r PE) SL1 files to Photon files for the Anycubic Photon 3D-Printer. It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer. The Photon S is currently not supported (see TODO). Anti-Aliasing with the new Firmware released in May 2019 is also not yet supported.
 
 Friendly Reminder
 =================
