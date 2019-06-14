@@ -24,7 +24,8 @@ Installation
 
 Binarys
 -------
-Just get the latest release from the releases page and enjoy.
+Just get the latest release from the [releases](https://github.com/fookatchu/SL1toPhoton/releases) page and enjoy.
+
 
 Source
 ------
