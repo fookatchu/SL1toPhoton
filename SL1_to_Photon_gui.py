@@ -20,6 +20,8 @@ class SL1Reader:
         self._read_config()
         self.n_layers = 0
         for filename in self.zf.namelist():
+            if os.path.dirname(filename) is not '':  # skip all files in subdirectorys (e.g. thumbnails)
+                continue
             if ".png" in filename:
                 self.n_layers += 1
 
@@ -42,6 +44,8 @@ class SL1Reader:
         for filename in self.zf.namelist():
             if ".png" in filename:
                 data = self.zf.read(filename)
+                if os.path.dirname(filename) is not '':  # skip all files in subdirectorys (e.g. thumbnails)
+                    continue
                 with open(os.path.join(dirpath, filename), 'bw') as f:
                     f.write(data)
 
