@@ -14,6 +14,8 @@ class SL1Reader:
         self._read_config()
         self.n_layers = 0
         for filename in self.zf.namelist():
+            if os.path.dirname(filename) is not '':  # skip all files in subdirectorys (e.g. thumbnails)
+                continue
             if ".png" in filename:
                 self.n_layers += 1
 
@@ -34,6 +36,8 @@ class SL1Reader:
         except OSError:
             pass
         for filename in self.zf.namelist():
+            if os.path.dirname(filename) is not '':  # skip all files in subdirectorys (e.g. thumbnails)
+                continue
             if ".png" in filename:
                 data = self.zf.read(filename)
                 with open(os.path.join(dirpath, filename), 'bw') as f:
@@ -79,7 +83,7 @@ if __name__ == '__main__':
         sl1.extract_images(tmpdirname)
         if args.verbose:
             print('DONE')
-        for i, filepath in enumerate(glob.glob(os.path.join(tmpdirname, '*.png'))):
+        for i, filepath in enumerate(sorted(glob.glob(os.path.join(tmpdirname, '*.png')))):
             if args.verbose:
                 print('converting layer {} / {} '.format(i+1, sl1.n_layers), end='')
             Image.open(filepath).rotate(180).save(filepath)
@@ -87,10 +91,6 @@ if __name__ == '__main__':
             if args.verbose:
                 print('DONE')
 
-    # if args.timelapse:
-    #     photon.overwrite_layer_parameters(exposure_time=1, off_time=1)
     photon.write(photon_path)
-    for layer in photon.layers:
-        print(layer)
     print('Output file written to: {}'.format(photon_path))
 
