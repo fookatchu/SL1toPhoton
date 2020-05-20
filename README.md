@@ -58,12 +58,12 @@ If you want to build your own binarys:
 pip install pyinstaller
 
 # win
-pyinstaller SL1_to_Photon.py --add-binary venv\Lib\site-packages\pyphotonfile\newfile.photon;pyphotonfile --onefile --clean
-pyinstaller SL1_to_Photon_gui.py --add-binary venv\Lib\site-packages\pyphotonfile\newfile.photon;pyphotonfile --onefile --noconsole --clean
+pyinstaller SL1_to_Photon.py --add-binary venv\Lib\site-packages\pyphotonfile\newfile.photon;pyphotonfile\data --onefile --clean
+pyinstaller SL1_to_Photon_gui.py --add-binary venv\Lib\site-packages\pyphotonfile\newfile.photon;pyphotonfile\data --onefile --noconsole --clean
 
 # mac (currently not working)
-pyinstaller SL1_to_Photon.py --add-binary venv/lib/python3.7/site-packages/pyphotonfile/newfile.photon:pyphotonfile --onefile --clean
-pyinstaller SL1_to_Photon_gui.py --add-binary venv/lib/python3.7/site-packages/pyphotonfile/newfile.photon:pyphotonfile --onefile --noconsole --clean
+pyinstaller SL1_to_Photon.py --add-binary venv/lib/python3.7/site-packages/pyphotonfile/newfile.photon:pyphotonfile/data --onefile --clean
+pyinstaller SL1_to_Photon_gui.py --add-binary venv/lib/python3.7/site-packages/pyphotonfile/newfile.photon:pyphotonfile/data --onefile --noconsole --clean
 ```
 I am by no means fluent in pyinstaller, so if there is a way to remove the ugly binary import, please let me know.
 
