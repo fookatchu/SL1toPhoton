@@ -1,3 +1,5 @@
+**WARNING**: I currently don't have a printer (and time) on hand anymore to support this project. Please have a look at the forks (for example cab404's) if the current state of the project does not work for you!
+
 SL1toPhoton is a tool for converting PrusaSlicer's (previously Slic3r PE) SL1 files to Photon files for the Anycubic Photon 3D-Printer. Other cbddlp-files should also work (e.G. Elegoo Mars). It is largely based on [pyphotonfile](https://github.com/fookatchu/pyphotonfile), maintained by the same developer. The Photon S is currently not supported (see TODO). Anti-Aliasing with the new Firmware released in May 2019 is not supported. Please see the section about alternatives below if you need anti-aliasing support through chitubox.
 
 Friendly Reminder
